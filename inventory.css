@@ -1,0 +1,33 @@
+.page-header {
+  padding: 2rem 0;
+  background: var(--light);
+  text-align: center;
+}
+
+.filter-section {
+  padding: 1.5rem 0;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.filter-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  align-items: end;
+}
+
+@media (max-width: 768px) {
+  .filter-controls {
+    grid-template-columns: 1fr;
+  }
+  
+  .inventory-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .vehicle-grid {
+    grid-template-columns: 1fr;
+  }
+}

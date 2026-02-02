@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto4Sale – Inventory</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="inventory.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="icon"><i class="fa-solid fa-car"></i></span>
+            <span class="text">AUTO<span class="highlight">4SALE</span></span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="inventory.html" class="nav-link active">Vehicles</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <i class="fa-solid fa-bars menu"></i>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Our <span class="highlight">Inventory</span></h1>
+            <p class="page-subtitle">
+                Browse our complete selection of quality vehicles.
+                Each car has been thoroughly inspected and is ready for a test drive.
+            </p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="priceFilter">Price Range</label>
+                    <select id="priceFilter" class="filter-select">
+                        <option value="">All Prices</option>
+                        <option value="0-300000">Under R300,000</option>
+                        <option value="300000-500000">R300,000 - R500,000</option>
+                        <option value="500000+">Over R500,000</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="typeFilter">Vehicle Type</label>
+                    <select id="typeFilter" class="filter-select">
+                        <option value="">All Types</option>
+                        <option value="sedan">Sedan</option>
+                        <option value="suv">SUV</option>
+                        <option value="pickup">Pickup</option>
+                        <option value="coupe">Coupe</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="fuelFilter">Fuel Type</label>
+                    <select id="fuelFilter" class="filter-select">
+                        <option value="">All Fuel Types</option>
+                        <option value="petrol">Petrol</option>
+                        <option value="diesel">Diesel</option>
+                        <option value="electric">Electric</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <button class="btn btn-secondary" onclick="clearFilters()">
+                        <i class="fa-solid fa-refresh"></i> Clear Filters
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <main class="inventory-main">
+        <div class="container">
+            <div class="inventory-header">
+                <div class="results-count">
+                    <span id="vehicleCount">6</span> vehicles available
+                </div>
+                <div class="sort-controls">
+                    <label for="sortBy">Sort by:</label>
+                    <select id="sortBy" class="sort-select">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="year-new">Year: Newest First</option>
+                        <option value="year-old">Year: Oldest First</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="vehicle-grid" id="vehicleGrid">
+                <!-- Featured Vehicle Card -->
+                <div class="card" data-price="520990" data-type="coupe" data-fuel="petrol" data-year="2024">
+                    <div class="image-wrapper">
+                        <span class="badge featured">Featured</span>
+                        <span class="badge year">2024</span>
+                        <img src="images/vehicle5.jpeg" alt="Sport Coupe RS" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <h3>Sport Coupe RS</h3>
+                        <p class="price">R520,990</p>
+                        <div class="specs">
+                            <span><i class="fa-solid fa-gauge"></i> 450 km</span>
+                            <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
+                            <span><i class="fa-solid fa-gear"></i> Auto</span>
+                        </div>
+                        <a href="vehicle-sport-coupe.html" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card" data-price="376990" data-type="pickup" data-fuel="diesel" data-year="2019">
+                    <div class="image-wrapper">
+                        <span class="badge featured">Featured</span>
+                        <span class="badge year">2019</span>
+                        <img src="images/vehicle1.jpeg" alt="Toyota Hilux 2.4 GD-6" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <h3>Toyota Hilux 2.4 GD-6</h3>
+                        <p class="price">R376,990</p>
+                        <div class="specs">
+                            <span><i class="fa-solid fa-gauge"></i> 1,507 km</span>
+                            <span><i class="fa-solid fa-gas-pump"></i> Diesel</span>
+                            <span><i class="fa-solid fa-gear"></i> Auto</span>
+                        </div>
+                        <a href="vehicle-toyota-hilux.html" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card" data-price="285990" data-type="sedan" data-fuel="petrol" data-year="2022">
+                    <div class="image-wrapper">
+                        <span class="badge featured">Featured</span>
+                        <span class="badge year">2022</span>
+                        <img src="images/vehicle2.jpeg" alt="Honda Civic EX" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <h3>Honda Civic EX</h3>
+                        <p class="price">R285,990</p>
+                        <div class="specs">
+                            <span><i class="fa-solid fa-gauge"></i> 1,200 km</span>
+                            <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
+                            <span><i class="fa-solid fa-gear"></i> Auto</span>
+                        </div>
+                        <a href="vehicle-honda-civic.html" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card" data-price="445990" data-type="pickup" data-fuel="diesel" data-year="2021">
+                    <div class="image-wrapper">
+                        <span class="badge featured">Featured</span>
+                        <span class="badge year">2021</span>
+                        <img src="images/vehicle3.jpeg" alt="Ford Ranger 3.2 TDCI" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <h3>Ford Ranger 3.2 TDCI</h3>
+                        <p class="price">R445,990</p>
+                        <div class="specs">
+                            <span><i class="fa-solid fa-gauge"></i> 2,200 km</span>
+                            <span><i class="fa-solid fa-gas-pump"></i> Diesel</span>
+                            <span><i class="fa-solid fa-gear"></i> Auto</span>
+                        </div>
+                        <a href="vehicle-ford-ranger.html" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card" data-price="298990" data-type="suv" data-fuel="petrol" data-year="2020">
+                    <div class="image-wrapper">
+                        <span class="badge featured">Featured</span>
+                        <span class="badge year">2020</span>
+                        <img src="images/vehicle4.jpeg" alt="Mazda CX-5" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <h3>Mazda CX-5</h3>
+                        <p class="price">R298,990</p>
+                        <div class="specs">
+                            <span><i class="fa-solid fa-gauge"></i> 1,200 km</span>
+                            <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
+                            <span><i class="fa-solid fa-gear"></i> Auto</span>
+                        </div>
+                        <a href="vehicle-mazda-cx5.html" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                <div class="card" data-price="395990" data-type="sedan" data-fuel="petrol" data-year="2023">
+                    <div class="image-wrapper">
+                        <span class="badge featured">Featured</span>
+                        <span class="badge year">2023</span>
+                        <img src="images/vehicle8.jpeg" alt="Premium Sedan" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <h3>Premium Sedan</h3>
+                        <p class="price">R395,990</p>
+                        <div class="specs">
+                            <span><i class="fa-solid fa-gauge"></i> 800 km</span>
+                            <span><i class="fa-solid fa-gas-pump"></i> Petrol</span>
+                            <span><i class="fa-solid fa-gear"></i> Auto</span>
+                        </div>
+                        <a href="vehicle-premium-sedan.html" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- No Results Message -->
+            <div id="noResults" class="no-results" style="display: none;">
+                <div class="no-results-content">
+                    <i class="fa-solid fa-search"></i>
+                    <h3>No vehicles found</h3>
+                    <p>Try adjusting your filters or browse all our vehicles.</p>
+                    <button class="btn" onclick="clearFilters()">View All Vehicles</button>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-section">
+                <button class="btn btn-secondary load-more" onclick="loadMoreVehicles()">
+                    <i class="fa-solid fa-plus"></i> Load More Vehicles
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Auto4Sale. All rights reserved.</p>
+        <p>Your trusted partner for quality pre-owned and new vehicles.</p>
+        <p>Serving customers with excellence since 2010</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

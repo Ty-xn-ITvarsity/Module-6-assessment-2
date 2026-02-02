@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2023 Mercedes-Benz C-Class - Auto4Sale</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="vehicle-detail.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <span class="icon"><i class="fa-solid fa-car"></i></span>
+      <span class="text">AUTO<span class="highlight">4SALE</span></span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="inventory.html" class="nav-link">Vehicles</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <i class="fa-solid fa-bars menu" aria-label="Toggle navigation menu" tabindex="0"></i>
+  </header>
+
+  <main class="vehicle-detail-container">
+    <nav class="breadcrumb" aria-label="Breadcrumb navigation">
+      <a href="index.html">Home</a> > <a href="inventory.html">Vehicles</a> > <span>Mercedes-Benz C-Class</span>
+    </nav>
+
+    <header class="vehicle-header">
+      <h1>2023 Mercedes-Benz C-Class C220d AMG Line</h1>
+      <p class="vehicle-subtitle">Luxury, elegance, and superior engineering</p>
+    </header>
+
+    <div class="vehicle-content">
+      <section class="vehicle-gallery">
+        <div class="main-image">
+          <img src="images/vehicle8.jpeg" alt="2023 Mercedes-Benz C-Class C220d AMG Line - Front and side view" loading="lazy">
+          <span class="badge featured">Featured</span>
+        </div>
+        <div class="image-gallery-thumbs">
+          <img src="images/vehicle8.jpeg" alt="Mercedes C-Class exterior view" class="thumb-image active" onclick="changeMainImage(this)">
+          <img src="images/vehicle5.jpeg" alt="Mercedes C-Class interior view" class="thumb-image" onclick="changeMainImage(this)">
+          <img src="images/vehicle6.jpeg" alt="Mercedes C-Class rear view" class="thumb-image" onclick="changeMainImage(this)">
+          <img src="images/vehicle7.jpeg" alt="Mercedes C-Class side profile" class="thumb-image" onclick="changeMainImage(this)">
+        </div>
+      </section>
+
+      <aside class="vehicle-info">
+        <div class="price-box">
+          <h2>R395,990</h2>
+          <p class="price-note">Price negotiable • Finance available</p>
+        </div>
+
+        <div class="quick-specs">
+          <div class="spec-item">
+            <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+            <div class="spec-content">
+              <span class="spec-label">Year</span>
+              <span class="spec-value">2023</span>
+            </div>
+          </div>
+          <div class="spec-item">
+            <i class="fa-solid fa-gauge" aria-hidden="true"></i>
+            <div class="spec-content">
+              <span class="spec-label">Mileage</span>
+              <span class="spec-value">800 km</span>
+            </div>
+          </div>
+          <div class="spec-item">
+            <i class="fa-solid fa-gas-pump" aria-hidden="true"></i>
+            <div class="spec-content">
+              <span class="spec-label">Fuel Type</span>
+              <span class="spec-value">Petrol</span>
+            </div>
+          </div>
+          <div class="spec-item">
+            <i class="fa-solid fa-gear" aria-hidden="true"></i>
+            <div class="spec-content">
+              <span class="spec-label">Transmission</span>
+              <span class="spec-value">Automatic</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-buttons">
+          <a href="contact.html?vehicle=mercedes-c220d-2023" class="btn primary" aria-label="Schedule test drive for Mercedes C-Class">
+            <i class="fa-solid fa-calendar-check"></i>
+            Schedule Test Drive
+          </a>
+          <a href="contact.html?inquiry=offer&vehicle=mercedes-c220d-2023" class="btn secondary" aria-label="Make an offer on Mercedes C-Class">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            Make an Offer
+          </a>
+        </div>
+
+        <div class="contact-dealer">
+          <h4>Contact Our Sales Team</h4>
+          <div class="dealer-info">
+            <span><i class="fa-solid fa-phone"></i> <a href="tel:5551234567">(555) 123-4567</a></span>
+            <span><i class="fa-solid fa-envelope"></i> <a href="mailto:sales@auto4sale.com">sales@auto4sale.com</a></span>
+            <span><i class="fa-solid fa-clock"></i> Mon-Fri: 9AM-7PM, Sat: 10AM-5PM</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="vehicle-details">
+      <div class="detail-section">
+        <h3>Vehicle Description</h3>
+        <p>The 2023 Mercedes-Benz C-Class C220d AMG Line represents the pinnacle of luxury sedans, combining cutting-edge technology with timeless elegance. This premium sedan features the latest MBUX infotainment system, sophisticated interior design, and Mercedes-Benz's renowned build quality.</p>
+        <p>With exceptionally low mileage, this virtually new C-Class offers the perfect balance of performance and efficiency. The AMG Line package adds sporty styling elements while maintaining the refined comfort Mercedes-Benz is famous for. Advanced safety features and premium materials throughout make this an exceptional choice for discerning drivers.</p>
+      </div>
+
+      <div class="detail-section">
+        <h3>Technical Specifications</h3>
+        <div class="specs-grid">
+          <div class="spec-row">
+            <span class="spec-name">Make</span>
+            <span class="spec-detail">Mercedes-Benz</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Model</span>
+            <span class="spec-detail">C220d AMG Line Auto</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Year</span>
+            <span class="spec-detail">2023</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Mileage</span>
+            <span class="spec-detail">800 km</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Engine</span>
+            <span class="spec-detail">2.0L Turbo 4-Cylinder Petrol</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Power</span>
+            <span class="spec-detail">258 HP / 400 Nm</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Transmission</span>
+            <span class="spec-detail">9G-Tronic Plus Automatic</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Fuel Type</span>
+            <span class="spec-detail">Petrol (Premium Unleaded)</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Drive Type</span>
+            <span class="spec-detail">Rear Wheel Drive</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Exterior Color</span>
+            <span class="spec-detail">Obsidian Black Metallic</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Interior</span>
+            <span class="spec-detail">Black Artico Leather</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Body Style</span>
+            <span class="spec-detail">4-Door Sedan</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Seating</span>
+            <span class="spec-detail">5 Passengers</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Fuel Economy</span>
+            <span class="spec-detail">7.2L/100km (Combined)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-section">
+        <h3>Features & Equipment</h3>
+        <div class="features-list">
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>AMG Line Exterior & Interior Package</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>MBUX Multimedia System with 11.9" Display</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Mercedes me Connect Services</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Burmester Surround Sound System</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Digital Light Multibeam LED Headlights</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>360° Camera & Parking Package</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Active Parking Assist with PARKTRONIC</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Keyless-Go Package</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Air Balance Package with Ionization</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Adaptive Damping System ADS Plus</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>19" AMG 5-Spoke Alloy Wheels</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Heated & Memory Front Seats</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Thermotronic Dual-Zone Climate Control</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Active Brake Assist & Pre-Safe System</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Blind Spot Assist & Lane Keeping Assist</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Distronic Plus Adaptive Cruise Control</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-section">
+        <h3>Financing Options</h3>
+        <p>Experience luxury with our premium financing solutions. Our dedicated finance team specializes in luxury vehicle financing and works with exclusive lenders to provide competitive rates for Mercedes-Benz purchases.</p>
+        <ul style="margin-left: 1rem; color: #333;">
+          <li>Premium financing rates from 9.75% (prime linked)</li>
+          <li>Flexible payment terms up to 84 months</li>
+          <li>Balloon payment options available</li>
+          <li>Comprehensive Mercedes-Benz insurance packages</li>
+          <li>Extended warranty and service plans</li>
+          <li>Immediate pre-approval for qualified buyers</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Auto4Sale. All rights reserved.</p>
+    <p>Your trusted partner for quality pre-owned and new vehicles.</p>
+    <p>Serving customers with excellence since 2010</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Image gallery functionality
+    function changeMainImage(clickedThumb) {
+      const mainImage = document.querySelector('.main-image img');
+      const allThumbs = document.querySelectorAll('.thumb-image');
+      
+      // Update main image
+      mainImage.src = clickedThumb.src;
+      mainImage.alt = clickedThumb.alt;
+      
+      // Update active thumbnail
+      allThumbs.forEach(thumb => thumb.classList.remove('active'));
+      clickedThumb.classList.add('active');
+    }
+  </script>
+</body>
+</html>

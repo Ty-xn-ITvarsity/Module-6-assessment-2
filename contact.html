@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Auto4Sale</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="icon"><i class="fa-solid fa-car"></i></span>
+            <span class="text">AUTO<span class="highlight">4SALE</span></span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="inventory.html" class="nav-link">Vehicles</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+        </nav>
+        <i class="fa-solid fa-bars menu"></i>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Contact Us</h1>
+            <p class="page-subtitle">Get in touch with our friendly team</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send us a Message</h2>
+                    <form id="contactForm" class="contact-form" onsubmit="handleContactSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="inquiry">General Inquiry</option>
+                                <option value="vehicle">Vehicle Inquiry</option>
+                                <option value="financing">Financing Options</option>
+                                <option value="service">Service & Maintenance</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="How can we help you?"></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                    
+                    <!-- Success Message -->
+                    <div id="formSuccess" class="form-success" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <h3>Message Sent!</h3>
+                        <p>Thank you for contacting us. We'll get back to you within 24 hours.</p>
+                    </div>
+
+                    <!-- Additional Information Cards -->
+                    <div class="form-footer-info">
+                        <div class="info-badge">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <div>
+                                <strong>Privacy Protected</strong>
+                                <p>Your information is secure with us</p>
+                            </div>
+                        </div>
+                        <div class="info-badge">
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <strong>Quick Response</strong>
+                                <p>We respond within 24 hours</p>
+                            </div>
+                        </div>
+                        <div class="info-badge">
+                            <i class="fa-solid fa-headset"></i>
+                            <div>
+                                <strong>Expert Support</strong>
+                                <p>Friendly team ready to help</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="social-connect">
+                        <h3>Connect With Us</h3>
+                        <p>Follow us on social media for the latest updates</p>
+                        <div class="social-buttons">
+                            <a href="https://facebook.com" class="social-btn facebook" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://twitter.com" class="social-btn twitter" aria-label="X (Twitter)">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="https://instagram.com" class="social-btn instagram" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://linkedin.com" class="social-btn linkedin" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://youtube.com" class="social-btn youtube" aria-label="YouTube">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Quick Links -->
+                    <div class="quick-help">
+                        <h3>Need Quick Answers?</h3>
+                        <div class="help-links">
+                            <a href="https://www.consumerreports.org/cars/car-buying/car-buying-faqs/" class="help-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-solid fa-circle-question"></i>
+                                <span>FAQs</span>
+                            </a>
+                            <a href="https://www.cars.com/shopping/results/" class="help-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-solid fa-car"></i>
+                                <span>Vehicle Finder</span>
+                            </a>
+                            <a href="https://www.bankrate.com/calculators/auto/auto-loan-calculator/" class="help-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-solid fa-calculator"></i>
+                                <span>Finance Calculator</span>
+                            </a>
+                            <a href="https://www.edmunds.com/car-buying/" class="help-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-solid fa-book"></i>
+                                <span>Buying Guide</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <h3>Visit Our Showroom</h3>
+                        <p>123 Auto Drive<br>Motor City, MC 12345</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p>Sales: <a href="tel:5551234567">(555) 123-4567</a><br>Service: <a href="tel:5551234568">(555) 123-4568</a></p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p><a href="mailto:info@auto4sale.com">info@auto4sale.com</a><br><a href="mailto:sales@auto4sale.com">sales@auto4sale.com</a></p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <h3>Business Hours</h3>
+                        <div class="hours-list">
+                            <p><span>Mon - Fri:</span> 9:00 AM - 7:00 PM</p>
+                            <p><span>Saturday:</span> 10:00 AM - 5:00 PM</p>
+                            <p><span>Sunday:</span> Closed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.345678901234!2d-118.24368668479434!3d34.05223908060814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDAzJzA4LjEiTiAxMTjCsDE0JzMzLjMiVw!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                    width="100%" 
+                    height="450" 
+                    style="border:0; border-radius: 12px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Auto4Sale Location Map">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Auto4Sale. All rights reserved.</p>
+        <p>Your trusted partner for quality pre-owned and new vehicles.</p>
+        <p>Serving customers with excellence since 2010</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

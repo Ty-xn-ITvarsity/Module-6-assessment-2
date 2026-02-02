@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2020 Honda Civic Executive - Auto4Sale</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="vehicle-detail.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <!-- Header Navigation -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="icon"><i class="fa-solid fa-car"></i></span>
+      <span class="text">AUTO<span class="highlight">4SALE</span></span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="inventory.html" class="nav-link">Vehicles</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <i class="fa-solid fa-bars menu" aria-label="Toggle navigation menu" tabindex="0"></i>
+  </header>
+
+  <main class="vehicle-detail-container">
+    <nav class="breadcrumb" aria-label="Breadcrumb navigation">
+      <a href="index.html">Home</a> > <a href="inventory.html">Vehicles</a> > <span>Honda Civic</span>
+    </nav>
+
+    <header class="vehicle-header">
+      <h1>2020 Honda Civic Executive</h1>
+      <p class="vehicle-subtitle">Sporty, reliable, and fuel-efficient sedan</p>
+    </header>
+
+    <div class="vehicle-content">
+      <section class="vehicle-gallery">
+        <div class="main-image">
+          <img src="images/vehicle1.jpeg" alt="2020 Honda Civic Executive - Front and side view" loading="lazy">
+          <span class="badge featured">Featured</span>
+        </div>
+        <div class="image-gallery-thumbs">
+          <img src="images/vehicle1.jpeg" alt="Honda Civic exterior view" class="thumb-image active" onclick="changeMainImage(this)">
+          <img src="images/vehicle2.jpeg" alt="Honda Civic interior view" class="thumb-image" onclick="changeMainImage(this)">
+          <img src="images/vehicle3.jpeg" alt="Honda Civic rear view" class="thumb-image" onclick="changeMainImage(this)">
+          <img src="images/vehicle4.jpeg" alt="Honda Civic side profile" class="thumb-image" onclick="changeMainImage(this)">
+        </div>
+      </section>
+
+      <aside class="vehicle-info">
+        <div class="price-box">
+          <h2>R285,990</h2>
+          <p class="price-note">Price negotiable • Finance available</p>
+        </div>
+
+        <div class="quick-specs">
+          <div class="spec-item">
+            <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+            <div class="spec-content">
+              <span class="spec-label">Year</span>
+              <span class="spec-value">2020</span>
+            </div>
+          </div>
+          <div class="spec-item">
+            <i class="fa-solid fa-gauge" aria-hidden="true"></i>
+            <div class="spec-content">
+              <span class="spec-label">Mileage</span>
+              <span class="spec-value">1,200 km</span>
+            </div>
+          </div>
+          <div class="spec-item">
+            <i class="fa-solid fa-gas-pump" aria-hidden="true"></i>
+            <div class="spec-content">
+              <span class="spec-label">Fuel Type</span>
+              <span class="spec-value">Petrol</span>
+            </div>
+          </div>
+          <div class="spec-item">
+            <i class="fa-solid fa-gear" aria-hidden="true"></i>
+            <div class="spec-content">
+              <span class="spec-label">Transmission</span>
+              <span class="spec-value">Automatic</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-buttons">
+          <a href="contact.html?vehicle=honda-civic-2020" class="btn primary" aria-label="Schedule test drive for Honda Civic">
+            <i class="fa-solid fa-calendar-check"></i>
+            Schedule Test Drive
+          </a>
+          <a href="contact.html?inquiry=offer&vehicle=honda-civic-2020" class="btn secondary" aria-label="Make an offer on Honda Civic">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            Make an Offer
+          </a>
+        </div>
+
+        <div class="contact-dealer">
+          <h4>Contact Our Sales Team</h4>
+          <div class="dealer-info">
+            <span><i class="fa-solid fa-phone"></i> <a href="tel:5551234567">(555) 123-4567</a></span>
+            <span><i class="fa-solid fa-envelope"></i> <a href="mailto:sales@auto4sale.com">sales@auto4sale.com</a></span>
+            <span><i class="fa-solid fa-clock"></i> Mon-Fri: 9AM-7PM, Sat: 10AM-5PM</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="vehicle-details">
+      <div class="detail-section">
+        <h3>Vehicle Description</h3>
+        <p>This 2020 Honda Civic Executive is in pristine condition with exceptionally low mileage, making it an excellent choice for discerning buyers. Known for its legendary reliability and outstanding fuel efficiency, this sedan delivers both performance and economy in a stylish package.</p>
+        <p>The Civic Executive features Honda's advanced VTEC engine technology, providing smooth acceleration and responsive handling. With its spacious interior, premium materials, and comprehensive suite of safety features including Honda Sensing technologies, this vehicle offers exceptional value for both daily commuting and long-distance travel.</p>
+      </div>
+
+      <div class="detail-section">
+        <h3>Technical Specifications</h3>
+        <div class="specs-grid">
+          <div class="spec-row">
+            <span class="spec-name">Make</span>
+            <span class="spec-detail">Honda</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Model</span>
+            <span class="spec-detail">Civic Executive CVT</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Year</span>
+            <span class="spec-detail">2020</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Mileage</span>
+            <span class="spec-detail">1,200 km</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Engine</span>
+            <span class="spec-detail">1.8L SOHC i-VTEC 4-Cylinder</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Power</span>
+            <span class="spec-detail">141 HP / 174 Nm</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Transmission</span>
+            <span class="spec-detail">CVT Automatic</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Fuel Type</span>
+            <span class="spec-detail">Petrol (Unleaded)</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Drive Type</span>
+            <span class="spec-detail">Front Wheel Drive</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Exterior Color</span>
+            <span class="spec-detail">Platinum White Pearl</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Interior</span>
+            <span class="spec-detail">Black Fabric</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Body Style</span>
+            <span class="spec-detail">4-Door Sedan</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Seating</span>
+            <span class="spec-detail">5 Passengers</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Fuel Economy</span>
+            <span class="spec-detail">6.4L/100km (Combined)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-section">
+        <h3>Features & Equipment</h3>
+        <div class="features-list">
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Honda Sensing Safety Suite</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Adaptive Cruise Control with Low-Speed Follow</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Collision Mitigation Braking System</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Lane Keeping Assist & Road Departure Mitigation</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Multi-Angle Rearview Camera</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>7" Display Audio with Apple CarPlay & Android Auto</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Dual-Zone Automatic Climate Control</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Smart Entry & Push Button Start</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>LED Headlights with Auto On/Off</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>LED Daytime Running Lights</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>16" Alloy Wheels</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Power Moonroof with Tilt Feature</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Remote Engine Start</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Heated Front Seats</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>60/40 Split-Folding Rear Seats</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Walk Away Auto Lock</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-section">
+        <h3>Financing Options</h3>
+        <p>We offer flexible financing solutions to help you drive away in your Honda Civic today. Our experienced finance team works with leading banks and financial institutions to secure competitive rates for qualified buyers.</p>
+        <ul style="margin-left: 1rem; color: #333;">
+          <li>Competitive interest rates starting from 10.25% (prime linked)</li>
+          <li>Flexible payment terms up to 72 months</li>
+          <li>Trade-in evaluations welcome</li>
+          <li>Comprehensive insurance packages available</li>
+          <li>Extended warranty options for added peace of mind</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Auto4Sale. All rights reserved.</p>
+    <p>Your trusted partner for quality pre-owned and new vehicles.</p>
+    <p>Serving customers with excellence since 2010</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Image gallery functionality
+    function changeMainImage(clickedThumb) {
+      const mainImage = document.querySelector('.main-image img');
+      const allThumbs = document.querySelectorAll('.thumb-image');
+      
+      // Update main image
+      mainImage.src = clickedThumb.src;
+      mainImage.alt = clickedThumb.alt;
+      
+      // Update active thumbnail
+      allThumbs.forEach(thumb => thumb.classList.remove('active'));
+      clickedThumb.classList.add('active');
+    }
+  </script>
+</body>
+</html>

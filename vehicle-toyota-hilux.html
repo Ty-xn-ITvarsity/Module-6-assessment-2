@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2019 Toyota Hilux - Auto4Sale</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="vehicle-detail.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <span class="icon"><i class="fa-solid fa-car"></i></span>
+      <span class="text">AUTO<span class="highlight">4SALE</span></span>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="inventory.html" class="nav-link">Vehicles</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <i class="fa-solid fa-bars menu" aria-label="Toggle navigation menu" tabindex="0"></i>
+  </header>
+
+  <main class="vehicle-detail-container">
+    <nav class="breadcrumb" aria-label="Breadcrumb navigation">
+      <a href="index.html">Home</a> > <a href="inventory.html">Vehicles</a> > <span>Toyota Hilux</span>
+    </nav>
+
+    <header class="vehicle-header">
+      <h1>2019 Toyota Hilux 2.8 GD-6</h1>
+      <p class="vehicle-subtitle">Rugged, reliable, and built for adventure</p>
+    </header>
+
+    <div class="vehicle-content">
+      <section class="vehicle-gallery">
+        <div class="main-image">
+          <img src="images/vehicle9.jpeg" alt="2019 Toyota Hilux 2.8 GD-6 - Front and side view" loading="lazy">
+          <span class="badge featured">Featured</span>
+        </div>
+        <div class="image-gallery-thumbs">
+          <img src="images/vehicle9.jpeg" alt="Toyota Hilux exterior view" class="thumb-image active" onclick="changeMainImage(this)">
+          <img src="images/vehicle7.jpeg" alt="Toyota Hilux interior view" class="thumb-image" onclick="changeMainImage(this)">
+          <img src="images/vehicle8.jpeg" alt="Toyota Hilux rear view" class="thumb-image" onclick="changeMainImage(this)">
+          <img src="images/vehicle6.jpeg" alt="Toyota Hilux side profile" class="thumb-image" onclick="changeMainImage(this)">
+        </div>
+      </section>
+
+      <aside class="vehicle-info">
+        <div class="price-box">
+          <h2>R485,990</h2>
+          <p class="price-note">Price negotiable • Finance available</p>
+        </div>
+
+        <div class="quick-specs">
+          <div class="spec-item">
+            <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+            <div class="spec-content">
+              <span class="spec-label">Year</span>
+              <span class="spec-value">2019</span>
+            </div>
+          </div>
+          <div class="spec-item">
+            <i class="fa-solid fa-gauge" aria-hidden="true"></i>
+            <div class="spec-content">
+              <span class="spec-label">Mileage</span>
+              <span class="spec-value">45,000 km</span>
+            </div>
+          </div>
+          <div class="spec-item">
+            <i class="fa-solid fa-gas-pump" aria-hidden="true"></i>
+            <div class="spec-content">
+              <span class="spec-label">Fuel Type</span>
+              <span class="spec-value">Diesel</span>
+            </div>
+          </div>
+          <div class="spec-item">
+            <i class="fa-solid fa-gear" aria-hidden="true"></i>
+            <div class="spec-content">
+              <span class="spec-label">Transmission</span>
+              <span class="spec-value">Automatic</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-buttons">
+          <a href="contact.html?vehicle=toyota-hilux-2019" class="btn primary" aria-label="Schedule test drive for Toyota Hilux">
+            <i class="fa-solid fa-calendar-check"></i>
+            Schedule Test Drive
+          </a>
+          <a href="contact.html?inquiry=offer&vehicle=toyota-hilux-2019" class="btn secondary" aria-label="Make an offer on Toyota Hilux">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            Make an Offer
+          </a>
+        </div>
+
+        <div class="contact-dealer">
+          <h4>Contact Our Sales Team</h4>
+          <div class="dealer-info">
+            <span><i class="fa-solid fa-phone"></i> <a href="tel:5551234567">(555) 123-4567</a></span>
+            <span><i class="fa-solid fa-envelope"></i> <a href="mailto:sales@auto4sale.com">sales@auto4sale.com</a></span>
+            <span><i class="fa-solid fa-clock"></i> Mon-Fri: 9AM-7PM, Sat: 10AM-5PM</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="vehicle-details">
+      <div class="detail-section">
+        <h3>Vehicle Description</h3>
+        <p>The legendary Toyota Hilux - South Africa's best-selling bakkie. This 2019 model features the powerful 2.8L turbo diesel engine with exceptional fuel efficiency and legendary reliability. With 4x4 capability and robust construction, this Hilux is perfect for both commercial applications and recreational adventures.</p>
+        <p>Meticulously maintained with a comprehensive service history, this Hilux comes equipped with modern conveniences while retaining the rugged durability Toyota is famous for. Whether you're tackling challenging terrain or cruising on the highway, this bakkie delivers uncompromising performance and dependability.</p>
+      </div>
+
+      <div class="detail-section">
+        <h3>Technical Specifications</h3>
+        <div class="specs-grid">
+          <div class="spec-row">
+            <span class="spec-name">Make</span>
+            <span class="spec-detail">Toyota</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Model</span>
+            <span class="spec-detail">Hilux 2.8 GD-6 RB Raider Auto</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Year</span>
+            <span class="spec-detail">2019</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Mileage</span>
+            <span class="spec-detail">45,000 km</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Engine</span>
+            <span class="spec-detail">2.8L 1GD-FTV Turbo Diesel I4</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Power</span>
+            <span class="spec-detail">177 HP / 450 Nm</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Transmission</span>
+            <span class="spec-detail">6-Speed Automatic</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Fuel Type</span>
+            <span class="spec-detail">Diesel</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Drive Type</span>
+            <span class="spec-detail">4x4 Part-Time</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Exterior Color</span>
+            <span class="spec-detail">Super White II</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Interior</span>
+            <span class="spec-detail">Black Fabric</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Body Style</span>
+            <span class="spec-detail">4-Door Double Cab</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Seating</span>
+            <span class="spec-detail">5 Passengers</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-name">Fuel Economy</span>
+            <span class="spec-detail">8.4L/100km (Combined)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-section">
+        <h3>Features & Equipment</h3>
+        <div class="features-list">
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>4x4 Off-Road Capability with Part-Time System</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Rear Differential Lock</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Hill Start Assist & Downhill Assist Control</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Multi-Angle Reverse Camera</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>8" Touchscreen Infotainment System</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Bluetooth Connectivity & USB Ports</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Dual-Zone Air Conditioning</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Cruise Control with Speed Limiter</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Power Windows with One-Touch Operation</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Central Locking with Remote Control</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>LED Daytime Running Lights & Fog Lights</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Factory Fitted Tow Bar (3,500kg Capacity)</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>17" Alloy Wheels with All-Terrain Tyres</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Load Bed Liner & Tie-Down Points</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Toyota Safety Sense 2.0</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-check" aria-hidden="true"></i>
+            <span>Vehicle Stability Control & Traction Control</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-section">
+        <h3>Financing Options</h3>
+        <p>Drive away in your Toyota Hilux today with our flexible financing solutions. Our finance specialists have extensive experience with commercial and recreational vehicle financing to help you secure the best deal.</p>
+        <ul style="margin-left: 1rem; color: #333;">
+          <li>Competitive interest rates from 10.5% (prime linked)</li>
+          <li>Flexible payment terms up to 72 months</li>
+          <li>Trade-in evaluations for bakkies and commercial vehicles</li>
+          <li>Commercial vehicle insurance packages</li>
+          <li>Extended warranty and service plans available</li>
+          <li>Quick pre-approval for business and personal buyers</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Auto4Sale. All rights reserved.</p>
+    <p>Your trusted partner for quality pre-owned and new vehicles.</p>
+    <p>Serving customers with excellence since 2010</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Image gallery functionality
+    function changeMainImage(clickedThumb) {
+      const mainImage = document.querySelector('.main-image img');
+      const allThumbs = document.querySelectorAll('.thumb-image');
+      
+      // Update main image
+      mainImage.src = clickedThumb.src;
+      mainImage.alt = clickedThumb.alt;
+      
+      // Update active thumbnail
+      allThumbs.forEach(thumb => thumb.classList.remove('active'));
+      clickedThumb.classList.add('active');
+    }
+  </script>
+</body>
+</html>
